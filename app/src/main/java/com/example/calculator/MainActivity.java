@@ -42,47 +42,44 @@ public class MainActivity extends AppCompatActivity {
     private void initViews() {
         tvResult = findViewById(R.id.tvResult);
 
-        // Tombol Angka
-        Button btnNum0Top = findViewById(R.id.btnNum0Top);
-        Button btnNum0 = findViewById(R.id.btnNum0);
-        Button btnNum1 = findViewById(R.id.btnNum1);
-        Button btnNum2 = findViewById(R.id.btnNum2);
-        Button btnNum3 = findViewById(R.id.btnNum3);
-        Button btnNum4 = findViewById(R.id.btnNum4);
-        Button btnNum7 = findViewById(R.id.btnNum7);
-        Button btnNum8 = findViewById(R.id.btnNum8);
-        Button btnNum9 = findViewById(R.id.btnNum9);
+        // Setup semua tombol angka (0 sampai 9)
+        int[] numButtonIds = {
+            R.id.btnNum0,
+            R.id.btnNum1,
+            R.id.btnNum2,
+            R.id.btnNum3,
+            R.id.btnNum4,
+            R.id.btnNum5,
+            R.id.btnNum6,
+            R.id.btnNum7,
+            R.id.btnNum8,
+            R.id.btnNum9
+        };
 
-        // Tombol Operasi & Kontrol
-        Button btnClear = findViewById(R.id.btnClear);
-        Button btnDel = findViewById(R.id.btnDel);
+        for (int id : numButtonIds) {
+            Button btn = findViewById(id);
+            if (btn != null) {
+                btn.setOnClickListener(v -> onNumberClick(btn.getText().toString().trim()));
+            }
+        }
+
+        // Tombol Operasi
         Button btnAdd = findViewById(R.id.btnAdd);
         Button btnSubtract = findViewById(R.id.btnSubtract);
         Button btnMultiply = findViewById(R.id.btnMultiply);
         Button btnDivide = findViewById(R.id.btnDivide);
+
+        if (btnAdd != null) btnAdd.setOnClickListener(v -> onOperatorClick("+"));
+        if (btnSubtract != null) btnSubtract.setOnClickListener(v -> onOperatorClick("-"));
+        if (btnMultiply != null) btnMultiply.setOnClickListener(v -> onOperatorClick("*"));
+        if (btnDivide != null) btnDivide.setOnClickListener(v -> onOperatorClick("/"));
+
+        // Tombol Kontrol
+        Button btnClear = findViewById(R.id.btnClear);
         Button btnEnter = findViewById(R.id.btnEnter);
 
-        // Pasang Click Listener untuk angka
-        btnNum0Top.setOnClickListener(v -> onNumberClick("0"));
-        btnNum0.setOnClickListener(v -> onNumberClick("0"));
-        btnNum1.setOnClickListener(v -> onNumberClick("1"));
-        btnNum2.setOnClickListener(v -> onNumberClick("2"));
-        btnNum3.setOnClickListener(v -> onNumberClick("3"));
-        btnNum4.setOnClickListener(v -> onNumberClick("4"));
-        btnNum7.setOnClickListener(v -> onNumberClick("7"));
-        btnNum8.setOnClickListener(v -> onNumberClick("8"));
-        btnNum9.setOnClickListener(v -> onNumberClick("9"));
-
-        // Pasang Click Listener untuk operator
-        btnAdd.setOnClickListener(v -> onOperatorClick("+"));
-        btnSubtract.setOnClickListener(v -> onOperatorClick("-"));
-        btnMultiply.setOnClickListener(v -> onOperatorClick("*"));
-        btnDivide.setOnClickListener(v -> onOperatorClick("/"));
-
-        // Pasang Click Listener untuk kontrol
-        btnClear.setOnClickListener(v -> onClearClick());
-        btnDel.setOnClickListener(v -> onDeleteClick());
-        btnEnter.setOnClickListener(v -> onEnterClick());
+        if (btnClear != null) btnClear.setOnClickListener(v -> onClearClick());
+        if (btnEnter != null) btnEnter.setOnClickListener(v -> onEnterClick());
     }
 
     private void onNumberClick(String digit) {
