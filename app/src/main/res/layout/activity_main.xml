@@ -185,7 +185,7 @@
         <!-- Contoh Tombol Melebar (Span 2 Kolom) -->
         <!-- Perbaikan pada tombol enter di baris paling bawah -->
         <Button
-            android:text="enter"
+            android:text="enter "
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_columnSpan="4"
