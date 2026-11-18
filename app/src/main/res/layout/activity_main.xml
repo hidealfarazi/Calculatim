@@ -4,16 +4,19 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    android:padding="16dp">
+    android:padding="16dp"
+    android:background="#BC020202">
 
     <!-- Layar Hasil -->
 
     <TextView
         android:id="@+id/tvResult"
-        android:layout_width="match_parent"
-        android:layout_height="360dp"
+        android:layout_width="395dp"
+        android:layout_height="435dp"
+        android:layout_gravity="bottom|end"
         android:layout_weight="1"
         android:gravity="bottom|end"
+        android:textColor="@color/white"
         android:text="0"
         android:textSize="48sp" />
 
@@ -34,20 +37,10 @@
             android:layout_marginBottom="8dp"
             android:insetTop="0dp"
             android:insetBottom="0dp"
+            android:backgroundTint="#7C000000"
             app:cornerRadius="2dp" />
         <Button
             android:id="@+id/btnDel"
-            android:text="DEL"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_columnWeight="1"
-            android:layout_marginEnd="8dp"
-            android:layout_marginBottom="8dp"
-            android:insetTop="0dp"
-            android:insetBottom="0dp"
-            app:cornerRadius="2dp" />
-        <Button
-            android:id="@+id/btnNum0Top"
             android:text="0"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -56,16 +49,31 @@
             android:layout_marginBottom="8dp"
             android:insetTop="0dp"
             android:insetBottom="0dp"
+            android:backgroundTint="#666060"
+            app:cornerRadius="2dp" />
+        <Button
+            android:id="@+id/btnNum0Top"
+            android:text="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:insetTop="0dp"
+            android:backgroundTint="#666060"
+            android:insetBottom="0dp"
+
             app:cornerRadius="2dp" />
         <Button
             android:id="@+id/btnNum1"
-            android:text="1"
+            android:text="2"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_columnWeight="1"
             android:layout_marginBottom="8dp"
             android:insetTop="0dp"
             android:insetBottom="0dp"
+            android:backgroundTint="#666060"
             app:cornerRadius="2dp" />
 
         <!-- Baris 2 -->
@@ -79,9 +87,22 @@
             android:layout_marginBottom="8dp"
             android:insetTop="0dp"
             android:insetBottom="0dp"
+            android:backgroundTint="#7C000000"
             app:cornerRadius="2dp" />
         <Button
             android:id="@+id/btnNum4"
+            android:text="5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:backgroundTint="#666060"
+            app:cornerRadius="2dp" />
+        <Button
+            android:id="@+id/btnNum3"
             android:text="4"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -90,27 +111,18 @@
             android:layout_marginBottom="8dp"
             android:insetTop="0dp"
             android:insetBottom="0dp"
+            android:backgroundTint="#666060"
             app:cornerRadius="2dp" />
         <Button
-            android:id="@+id/btnNum3"
+            android:id="@+id/btnNum2"
             android:text="3"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_columnWeight="1"
-            android:layout_marginEnd="8dp"
             android:layout_marginBottom="8dp"
             android:insetTop="0dp"
             android:insetBottom="0dp"
-            app:cornerRadius="2dp" />
-        <Button
-            android:id="@+id/btnNum2"
-            android:text="2"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_columnWeight="1"
-            android:layout_marginBottom="8dp"
-            android:insetTop="0dp"
-            android:insetBottom="0dp"
+            android:backgroundTint="#666060"
             app:cornerRadius="2dp" />
 
         <!-- Baris 3 -->
@@ -124,9 +136,22 @@
             android:layout_marginBottom="8dp"
             android:insetTop="0dp"
             android:insetBottom="0dp"
+            android:backgroundTint="#7C000000"
             app:cornerRadius="2dp" />
         <Button
             android:id="@+id/btnNum7"
+            android:text="6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:backgroundTint="#666060"
+            app:cornerRadius="2dp" />
+        <Button
+            android:id="@+id/btnNum8"
             android:text="7"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -135,27 +160,18 @@
             android:layout_marginBottom="8dp"
             android:insetTop="0dp"
             android:insetBottom="0dp"
+            android:backgroundTint="#666060"
             app:cornerRadius="2dp" />
         <Button
-            android:id="@+id/btnNum8"
+            android:id="@+id/btnNum9"
             android:text="8"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_columnWeight="1"
-            android:layout_marginEnd="8dp"
             android:layout_marginBottom="8dp"
             android:insetTop="0dp"
             android:insetBottom="0dp"
-            app:cornerRadius="2dp" />
-        <Button
-            android:id="@+id/btnNum9"
-            android:text="9"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_columnWeight="1"
-            android:layout_marginBottom="8dp"
-            android:insetTop="0dp"
-            android:insetBottom="0dp"
+            android:backgroundTint="#666060"
             app:cornerRadius="2dp" />
 
         <!-- Baris 4 -->
@@ -168,6 +184,7 @@
             android:layout_marginEnd="8dp"
             android:insetTop="0dp"
             android:insetBottom="0dp"
+            android:backgroundTint="#7C000000"
             app:cornerRadius="2dp" />
         <Button
             android:id="@+id/btnSubtract"
@@ -178,10 +195,11 @@
             android:layout_marginEnd="8dp"
             android:insetTop="0dp"
             android:insetBottom="0dp"
+            android:backgroundTint="#7C000000"
             app:cornerRadius="2dp" />
         <Button
             android:id="@+id/btnNum0"
-            android:text="0"
+            android:text="9"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_columnSpan="2"
@@ -189,6 +207,7 @@
             android:layout_gravity="fill_horizontal"
             android:insetTop="0dp"
             android:insetBottom="0dp"
+            android:backgroundTint="#666060"
             app:cornerRadius="2dp" />
 
         <!-- Contoh Tombol Melebar (Span 2 Kolomgf) -->
@@ -204,6 +223,7 @@
             android:layout_marginTop="8dp"
             android:insetTop="0dp"
             android:insetBottom="0dp"
+            android:backgroundTint="#FF9800"
             app:cornerRadius="2dp" />
 
         <!-- Lanjutkan tombol lainnya sesuai urutan kiri ke kanan -->
