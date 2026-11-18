@@ -1,4 +1,5 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -6,8 +7,6 @@
     android:padding="16dp">
 
     <!-- Layar Hasil -->
-
-
 
     <TextView
         android:id="@+id/tvResult"
@@ -25,8 +24,8 @@
         android:rowCount="5">
 
         <!-- Baris 1 -->
-        <!-- Baris 1 -->
         <Button
+            android:id="@+id/btnClear"
             android:text="C"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -37,6 +36,7 @@
             android:insetBottom="0dp"
             app:cornerRadius="2dp" />
         <Button
+            android:id="@+id/btnDel"
             android:text="DEL"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -47,6 +47,7 @@
             android:insetBottom="0dp"
             app:cornerRadius="2dp" />
         <Button
+            android:id="@+id/btnNum0Top"
             android:text="0"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -57,6 +58,7 @@
             android:insetBottom="0dp"
             app:cornerRadius="2dp" />
         <Button
+            android:id="@+id/btnNum1"
             android:text="1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -68,6 +70,7 @@
 
         <!-- Baris 2 -->
         <Button
+            android:id="@+id/btnMultiply"
             android:text="*"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -78,6 +81,7 @@
             android:insetBottom="0dp"
             app:cornerRadius="2dp" />
         <Button
+            android:id="@+id/btnNum4"
             android:text="4"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -88,6 +92,7 @@
             android:insetBottom="0dp"
             app:cornerRadius="2dp" />
         <Button
+            android:id="@+id/btnNum3"
             android:text="3"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -98,6 +103,7 @@
             android:insetBottom="0dp"
             app:cornerRadius="2dp" />
         <Button
+            android:id="@+id/btnNum2"
             android:text="2"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -109,6 +115,7 @@
 
         <!-- Baris 3 -->
         <Button
+            android:id="@+id/btnDivide"
             android:text="/"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -119,6 +126,7 @@
             android:insetBottom="0dp"
             app:cornerRadius="2dp" />
         <Button
+            android:id="@+id/btnNum7"
             android:text="7"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -129,6 +137,7 @@
             android:insetBottom="0dp"
             app:cornerRadius="2dp" />
         <Button
+            android:id="@+id/btnNum8"
             android:text="8"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -139,6 +148,7 @@
             android:insetBottom="0dp"
             app:cornerRadius="2dp" />
         <Button
+            android:id="@+id/btnNum9"
             android:text="9"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -150,6 +160,7 @@
 
         <!-- Baris 4 -->
         <Button
+            android:id="@+id/btnAdd"
             android:text="+"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -159,6 +170,7 @@
             android:insetBottom="0dp"
             app:cornerRadius="2dp" />
         <Button
+            android:id="@+id/btnSubtract"
             android:text="-"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -168,6 +180,7 @@
             android:insetBottom="0dp"
             app:cornerRadius="2dp" />
         <Button
+            android:id="@+id/btnNum0"
             android:text="0"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -178,13 +191,10 @@
             android:insetBottom="0dp"
             app:cornerRadius="2dp" />
 
-
-
-
-
         <!-- Contoh Tombol Melebar (Span 2 Kolomgf) -->
         <!-- Perbaikan pada tombol enter di baris paling bawah -->
         <Button
+            android:id="@+id/btnEnter"
             android:text="enter "
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -195,7 +205,6 @@
             android:insetTop="0dp"
             android:insetBottom="0dp"
             app:cornerRadius="2dp" />
-
 
         <!-- Lanjutkan tombol lainnya sesuai urutan kiri ke kanan -->
 
