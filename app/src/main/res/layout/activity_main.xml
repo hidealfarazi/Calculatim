@@ -7,7 +7,7 @@
 
     <!-- Layar Hasil -->
 
-    <!-- Area Tombol -->
+
 
     <TextView
         android:id="@+id/tvResult"
@@ -182,7 +182,7 @@
 
 
 
-        <!-- Contoh Tombol Melebar (Span 2 Kolom) -->
+        <!-- Contoh Tombol Melebar (Span 2 Kolomgf) -->
         <!-- Perbaikan pada tombol enter di baris paling bawah -->
         <Button
             android:text="enter "
