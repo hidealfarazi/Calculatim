@@ -1,6 +1,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:padding="16dp">
 
@@ -24,63 +25,177 @@
         android:rowCount="5">
 
         <!-- Baris 1 -->
+        <!-- Baris 1 -->
         <Button
             android:text="C"
-            android:layout_columnWeight="1" />
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            app:cornerRadius="2dp" />
         <Button
             android:text="DEL"
-            android:layout_columnWeight="1" />
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            app:cornerRadius="2dp" />
         <Button
             android:text="0"
-            android:layout_columnWeight="1" />
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            app:cornerRadius="2dp" />
         <Button
             android:text="1"
-            android:layout_columnWeight="1" />
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_marginBottom="8dp"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            app:cornerRadius="2dp" />
+
+        <!-- Baris 2 -->
         <Button
             android:text="*"
-            android:layout_columnWeight="1" />
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            app:cornerRadius="2dp" />
         <Button
             android:text="4"
-            android:layout_columnWeight="1" />
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            app:cornerRadius="2dp" />
         <Button
             android:text="3"
-            android:layout_columnWeight="1" />
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            app:cornerRadius="2dp" />
         <Button
             android:text="2"
-            android:layout_columnWeight="1" />
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_marginBottom="8dp"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            app:cornerRadius="2dp" />
+
+        <!-- Baris 3 -->
         <Button
             android:text="/"
-            android:layout_columnWeight="1" />
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            app:cornerRadius="2dp" />
         <Button
             android:text="7"
-            android:layout_columnWeight="1" />
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            app:cornerRadius="2dp" />
         <Button
             android:text="8"
-            android:layout_columnWeight="1" />
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            app:cornerRadius="2dp" />
         <Button
             android:text="9"
-            android:layout_columnWeight="1" />
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_marginBottom="8dp"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            app:cornerRadius="2dp" />
+
+        <!-- Baris 4 -->
         <Button
             android:text="+"
-            android:layout_columnWeight="1" />
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_marginEnd="8dp"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            app:cornerRadius="2dp" />
         <Button
             android:text="-"
-            android:layout_columnWeight="1" />
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_marginEnd="8dp"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            app:cornerRadius="2dp" />
         <Button
             android:text="0"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
             android:layout_columnSpan="2"
             android:layout_columnWeight="2"
-            android:layout_gravity="fill_horizontal" />
+            android:layout_gravity="fill_horizontal"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            app:cornerRadius="2dp" />
+
 
 
 
 
         <!-- Contoh Tombol Melebar (Span 2 Kolom) -->
+        <!-- Perbaikan pada tombol enter di baris paling bawah -->
         <Button
             android:text="enter"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
             android:layout_columnSpan="4"
-            android:layout_columnWeight="5"
-            android:layout_gravity="fill_horizontal" />
+            android:layout_columnWeight="4"
+            android:layout_gravity="fill_horizontal"
+            android:layout_marginTop="8dp"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            app:cornerRadius="2dp" />
+
 
         <!-- Lanjutkan tombol lainnya sesuai urutan kiri ke kanan -->
 
